@@ -4,12 +4,6 @@
 
 If you use this code, please cite our manuscript, published in the proceedings of AISTATS 2022.
 
-
-
-Preetish Rath and Michael C. Hughes
-
-To appear at Artificial Intelligence & Statistics (AISTATS), 2022. 
-
 <blockquote>
 <p>
 <i>Optimizing Early Warning Classifiers to Control False Alarms via a Minimum Precision Constraint</i>.
