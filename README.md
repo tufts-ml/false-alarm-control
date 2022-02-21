@@ -22,3 +22,13 @@ PDF available: <a href="https://www.michaelchughes.com/papers/RathHughes_AISTATS
 </p>
 </blockquote>
     
+
+```
+@inproceedings{rathOptimizingEarlyWarning2022,
+    title = {Optimizing Early Warning Classifiers to Control False Alarms via a Minimum Precision Constraint},
+    booktitle = {Artificial Intelligence and Statistics (AISTATS)},
+    author = {Rath, Preetish and Hughes, Michael C.},
+    year = {2022},
+    url = {https://www.michaelchughes.com/papers/RathHughes_AISTATS_2022.pdf},
+}
+```
