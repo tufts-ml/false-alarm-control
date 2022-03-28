@@ -2,13 +2,19 @@
 
 # Optimizing Early Warning Classifiers to Control False Alarms Via a Minimum Precision Constraint
 
-This repo contains code for training binary classifiers to maximize recall subject to a minimum precision constraint, designed to help the reader to investigate the toy examples in the paper(published at AISTATS '22).
+This repo contains code for training binary classifiers to maximize recall subject to a minimum precision constraint.
 
-We provide a notebook comparing 4 different methodologies that are trained to maximize recall, subject to precision>= 0.9. 
+We have proposed a new method, formally described in [Rath & Hughes AISTATS 2022](https://github.com/tufts-ml/false-alarm-control/#citation).
+
+The focus of this repo is currently a *toy* binary classification task described in our paper. This focus makes comparing different techniques simple and visually comparing their results easy.
+
+We provide a notebook comparing 4 different methodologies:
 * BCE + threshold search
 * Eban et al's hinge bound
 * Fathony & Kolter's adversarial prediction bound
 * Our proposed sigmoid bound
+
+All methods try to maximize recall subject to satisfying a precision constraint.
 
 ### Workflow
 
