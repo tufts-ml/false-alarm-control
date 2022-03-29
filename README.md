@@ -60,6 +60,26 @@ All methods try to maximize recall subject to satisfying a precision constraint.
    Our proposed sigmoid bound reaches the desired precision of 0.9, without any post-hoc threshold search, and achieves a recall of 0.23, which is nearly 2x the recall achieved by Fathony & Kolter's adversarial prediction bound. Moreover our proposed bound requires a training time of ~15 seconds, which is $(1/300)^{th}$ of the training time required by Fathony & Kolter's adversarial prediction bound.
 
 
+### Experiments on EHR Data
+We will be providing polished code for experiments on the EHR data as detailed in [Rath & Hughes AISTATS 2022](https://github.com/tufts-ml/false-alarm-control/#citation) by the end of April 2022. Users can replicate the results by running snakemake files in the following format :
+
+1. Standardizing the dataset
+```python
+>> snakemake --cores 1 --snakefile standardize_dataset_and_split_train_test.smk 
+```
+
+2. Training the logistic regression and neural network with multiple training objectives written with pytorch
+```python
+>> snakemake --cores 1 --snakefile train_{model}.smk BCE_plus_threshold_search
+>> snakemake --cores 1 --snakefile train_{model}.smk hinge_bound
+>> snakemake --cores 1 --snakefile train_{model}.smk sigmoid_bound
+```
+
+3. Evaluating the performance of trained models
+```python
+>> snakemake --cores 1 --evaluate_performance.smk
+```
+
 
 ## Citation
 
