@@ -80,6 +80,8 @@ We will be providing polished code for experiments on the EHR data as detailed i
 >> snakemake --cores 1 --evaluate_performance.smk
 ```
 
+### Expected output
+![](images/model_comparison.png?raw=true)
 
 ## Citation
 
